@@ -1,0 +1,190 @@
+:root {
+  --color-one: #0891b2;
+  --font-name: "Source Sans Pro", sans-serif;
+}
+
+html {
+  font-family: var(--font-name);
+  font-size: medium;
+}
+body {
+  width: 100%;
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+/*header */
+header {
+  width: 100%;
+  height: 35rem;
+  padding-top: 1rem;
+  background-color: var(--color-one);
+  position: relative;
+}
+.bg-color {
+  position: absolute;
+  bottom: -1%;
+  width: 100%;
+  height: 200px;
+  background-color: whitesmoke;
+  clip-path: polygon(0% 90%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.h-img {
+  display: block;
+  width: 80%;
+  position: absolute;
+  top: 8%;
+}
+
+.name {
+  display: inline;
+  position: absolute;
+  color: white;
+  bottom: 0%;
+  left: 20%;
+  font-size: 5rem;
+  margin: 0%;
+}
+
+/*main*/
+.intro {
+  background-color: whitesmoke;
+}
+main {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  gap: 1rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+}
+
+.arrow {
+  width: 40px;
+  border-radius: 0%;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.pj {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(5px 5px 1px rgb(214, 211, 211));
+}
+
+.w-ss {
+  min-height: 70%;
+  background-color: aquamarine;
+  font-size: larger;
+  text-align: center;
+}
+
+.name-icon {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  gap: 6rem;
+}
+
+.pj-icon {
+  width: 30px;
+}
+
+.icons {
+  gap: 1rem;
+}
+.pj-info {
+  min-height: 30%;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: white;
+}
+
+.pj-info h4,
+.pj-info p {
+  width: 80%;
+  margin: 0%;
+}
+
+.pj-info h4 {
+  margin: 0%;
+}
+
+footer h3 {
+  margin: 0%;
+  margin-top: 2rem;
+}
+
+.dude {
+  width: 100%;
+  border-radius: 0%;
+}
+
+footer {
+  margin-top: 8rem;
+  background-color: var(--color-one);
+  font-size: 150%;
+  font-weight: 900;
+  gap: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.f {
+  width: 80%;
+  margin: auto;
+}
+
+.w1 .w-ss {
+  background-color: #d53db1;
+}
+
+.w2 .w-ss {
+  background-color: #44bccb;
+}
+.w3 .w-ss {
+  background-color: #794a38;
+}
+.w4 .w-ss {
+  background-color: #263b13;
+}
+.w5 .w-ss {
+  background-color: #d0a053;
+}
+.w6 .w-ss {
+  background-color: #152d99;
+}
