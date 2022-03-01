@@ -20,6 +20,7 @@ header {
   padding-top: 1rem;
   background-color: var(--color-one);
   position: relative;
+  margin-bottom: 1rem;
 }
 .bg-color {
   position: absolute;
@@ -112,6 +113,10 @@ main {
   align-items: center;
   justify-content: stretch;
   gap: 6rem;
+}
+
+.name-icon h4 {
+  align-self: flex-start;
 }
 
 .pj-icon {
