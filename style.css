@@ -13,104 +13,45 @@ body {
   background-color: whitesmoke;
 }
 
-/*header */
+/* header  */
+
 header {
   width: 100%;
-  height: 35rem;
-  padding-top: 1rem;
-  background-color: var(--color-one);
+  height: 30rem;
+  background: linear-gradient(-195deg, var(--color-one) 70%, whitesmoke 30%);
   position: relative;
-  margin-bottom: 2rem;
-}
-.bg-color {
-  position: absolute;
-  bottom: -1%;
-  width: 100%;
-  height: 200px;
-  background-color: whitesmoke;
-  clip-path: polygon(0% 90%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .h-img {
-  display: block;
-  width: 80%;
+  width: 80vw;
   position: absolute;
-  top: 8%;
+  top: 12%;
+  left: 10%;
 }
-
 .name {
   position: absolute;
   color: white;
-  bottom: 10%;
+  bottom: 0%;
   left: 20%;
   font-size: 5rem;
+  padding: 0%;
+  margin: 0%;
 }
 
-@media screen and (min-width: 500px) {
-  header {
-    height: 28rem;
-  }
-  .bg-color {
-    clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 100%);
-  }
-  .name {
-    display: inline;
-    top: 1%;
-    left: 40%;
-    font-size: 4rem;
-  }
-  .intro {
-    position: absolute;
-    border: 1px black solid;
-    width: 80%;
-    top: 8%;
-    left: 15%;
-    height: 90%;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 1rem;
-    z-index: 1;
-    box-sizing: border-box;
-  }
+.intro {
+  margin-top: 7rem;
+}
 
-  .h-img {
-    z-index: 2;
-    width: 40%;
-    height: 74%;
-    left: 13%;
-    top: 4%;
-  }
+.intro h3 {
+  text-align: center;
+}
 
-  .intro h3 {
-    width: 40%;
-    margin: 0%;
-    align-self: flex-end;
-  }
-
-  .aside {
-    width: 50%;
-    align-self: flex-end;
-    margin: 0%;
-  }
-  .aside p,
-  .bottom p {
-    margin: 0%;
-  }
-  .bottom {
-    margin: 0%;
-  }
-
-  .icons {
-    visibility: hidden;
-  }
+.icons {
+  display: flex;
+  justify-content: space-between;
 }
 /*main*/
-.intro {
-  background-color: whitesmoke;
-}
+
 main {
   width: 80%;
   margin: auto;
@@ -121,12 +62,6 @@ main {
   font-size: 2rem;
   font-weight: bold;
   gap: 1rem;
-}
-
-.icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .icon {
@@ -169,22 +104,23 @@ main {
 
 .name-icon {
   display: flex;
-  align-items: center;
-  justify-content: stretch;
-  gap: 6rem;
+  width: 80%;
 }
 
 .name-icon h4 {
   align-self: flex-start;
 }
 
+.small-icons {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
 .pj-icon {
   width: 30px;
 }
 
-.icons {
-  gap: 1rem;
-}
 .pj-info {
   min-height: 30%;
   font-size: 1.3rem;
