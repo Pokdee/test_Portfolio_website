@@ -7,6 +7,7 @@ html {
   font-family: var(--font-name);
   font-size: medium;
 }
+
 body {
   width: 100%;
   margin: 0;
@@ -31,15 +32,80 @@ header {
 .name {
   position: absolute;
   color: white;
-  bottom: 0%;
-  left: 20%;
   font-size: 5rem;
   padding: 0%;
   margin: 0%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+@media screen and (min-width: 500px) {
+  .h-img {
+    max-width: 245px;
+    top: 7%;
+    z-index: 3;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(5px 5px 1px rgb(214, 211, 211));
+  }
+  .name {
+    top: 10%;
+    left: 60%;
+    font-size: 3rem;
+    width: fit-content;
+    z-index: 3;
+  }
+  .intro {
+    position: absolute;
+    background-color: whitesmoke;
+    margin: 0%;
+    padding: 0%;
+    width: clamp(450px, 450px, 450px);
+    height: 80vh;
+
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(7px 7px 1px rgb(214, 211, 211));
+  }
+  .aside {
+    width: 40%;
+    height: 50vh;
+    align-self: flex-end;
+    padding: 1rem;
+  }
+  .bottom {
+    height: 30vh;
+    padding: 1rem;
+    padding-top: 0%;
+  }
+
+  .icons {
+    visibility: hidden;
+  }
+  .intro h3 {
+    width: 50%;
+    align-self: flex-end;
+  }
+  .intro h3,
+  .aside p,
+  .bottom p {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+}
+
+/*main*/
+
 .intro {
-  margin-top: 7rem;
+  margin-top: 6rem;
 }
 
 .intro h3 {
@@ -50,7 +116,6 @@ header {
   display: flex;
   justify-content: space-between;
 }
-/*main*/
 
 main {
   width: 80%;
@@ -62,6 +127,12 @@ main {
   font-size: 2rem;
   font-weight: bold;
   gap: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  main {
+    margin-top: 20vh;
+  }
 }
 
 .icon {
