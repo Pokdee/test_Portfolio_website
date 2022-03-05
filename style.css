@@ -114,9 +114,10 @@ header {
 /* laptop  */
 @media screen and (min-width: 900px) {
   .h-img {
-    max-width: 35vw;
-    left: 22%;
-    top: 60%;
+    max-width: 23rem;
+    top: 65%;
+    left:28%;
+    transform: translate(-50,-50);
   }
   .name {
     filter: none;
@@ -124,8 +125,9 @@ header {
     top: 90%;
   }
   .intro {
-    left: 65%;
-    top: 36%;
+    top: 33%;
+    left:66%;
+    transform: translate(-50,-50);
     height: 65vh;
     justify-content: center;
   }
@@ -147,6 +149,19 @@ header {
     width: 30%;
     align-self: flex-end;
     margin-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .h-img{
+    top: 60%;
+    left:28%;
+    transform: translate(-50,-50);
+  }
+  .intro{
+    top: 33%;
+    left:60%;
+    transform: translate(-50,-50);
   }
 }
 /*main*/
