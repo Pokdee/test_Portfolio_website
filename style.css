@@ -17,10 +17,20 @@ body {
 /* header  */
 
 header {
-  width: 100%;
+  width: 100vw;
   height: 30rem;
   background: linear-gradient(-195deg, var(--color-one) 70%, whitesmoke 30%);
   position: relative;
+}
+/* laptop  */
+@media screen and (min-width: 900px) {
+  header {
+    background-image: linear-gradient(
+      -190deg,
+      var(--color-one) 60%,
+      whitesmoke 40%
+    );
+  }
 }
 
 .h-img {
@@ -43,7 +53,6 @@ header {
 @media screen and (min-width: 600px) {
   .h-img {
     max-width: 260px;
-    max-height: 410px;
     top: 7%;
     z-index: 3;
     top: 50%;
@@ -102,6 +111,44 @@ header {
   }
 }
 
+/* laptop  */
+@media screen and (min-width: 900px) {
+  .h-img {
+    max-width: 35vw;
+    left: 22%;
+    top: 60%;
+  }
+  .name {
+    filter: none;
+    left: 22%;
+    top: 90%;
+  }
+  .intro {
+    left: 65%;
+    top: 36%;
+    height: 65vh;
+    justify-content: center;
+  }
+  .intro h3 {
+    align-self: center;
+  }
+  .aside {
+    align-self: center;
+    width: auto;
+    height: auto;
+  }
+  .bottom {
+    padding-bottom: 0%;
+    height: auto;
+  }
+  .icons {
+    visibility: visible;
+    padding: 1rem;
+    width: 30%;
+    align-self: flex-end;
+    margin-right: 1.5rem;
+  }
+}
 /*main*/
 
 .intro {
@@ -138,6 +185,12 @@ main {
 .icon {
   width: 50px;
 }
+/* laptop  */
+@media screen and (min-width: 900px) {
+  .icon {
+    width: 35px;
+  }
+}
 
 .arrow {
   width: 40px;
@@ -151,6 +204,7 @@ main {
   justify-content: center;
   gap: 3rem;
 }
+/* tablet */
 @media screen and (min-width: 600px) {
   .works {
     display: grid;
@@ -166,12 +220,27 @@ main {
   }
 }
 
+/* laptop  */
+@media screen and (min-width: 900px) {
+  .works {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 20rem);
+    grid-row-gap: 2rem;
+  }
+}
+
 .pj {
   font-size: larger;
   height: 25rem;
   display: flex;
   flex-direction: column;
   filter: drop-shadow(5px 5px 1px rgb(214, 211, 211));
+}
+/* laptop  */
+@media screen and (min-width: 900px) {
+  .pj {
+    height: 16rem;
+  }
 }
 
 .w-ss {
@@ -220,7 +289,7 @@ main {
 .pj-info h4 {
   margin: 0%;
 }
-
+/* tablet */
 @media screen and (min-width: 600px) {
   .pj-info,
   .name-icon {
@@ -228,15 +297,17 @@ main {
     font-weight: bolder;
   }
 }
+/* laptop  */
+@media screen and (min-width: 900px) {
+  .pj-info {
+    min-height: 50%;
+  }
+}
 
+/* footer  */
 footer h3 {
   margin: 0%;
   margin-top: 2rem;
-}
-
-.dude {
-  width: 100%;
-  border-radius: 0%;
 }
 
 footer {
@@ -249,10 +320,33 @@ footer {
   display: flex;
   flex-direction: column;
 }
+.dude {
+  width: 100%;
+  border-radius: 0%;
+}
 
 .f {
   width: 80%;
   margin: auto;
+}
+
+/* laptop  */
+@media screen and (min-width: 900px) {
+  footer {
+    display: block;
+    width: 100%;
+    height: fit-content;
+  }
+  .f {
+    float: left;
+    width: 40%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  .dude {
+    width: 50%;
+    padding: 1.5rem 0rem;
+  }
 }
 
 .w1 .w-ss {
